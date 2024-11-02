@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "InstrumentSans";
+  src: url("../font/InstrumentSans.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply scroll-smooth;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-instrumentSans font-bold tracking-tighter text-gray-950;
+  }
+  p,
+  .small {
+    @apply font-roboto font-normal text-gray-400;
+  }
+}
+
+@layer components {
+  h1 {
+    @apply text-5xl md:text-[140px] md:leading-[120px];
+  }
+  h2 {
+    @apply text-4xl leading-[36px] md:text-[90px] md:leading-[80px];
+  }
+  h3 {
+    @apply text-3xl leading-[30px] md:text-[50px] md:leading-[48px];
+  }
+  h4 {
+    @apply text-2xl leading-[24px] md:text-[30px] md:leading-[32px];
+  }
+  h5 {
+    @apply text-xl leading-[22px] md:text-[22px] md:leading-[24px];
+  }
+  h6 {
+    @apply text-lg leading-[20px] md:text-[20px] md:leading-[20px];
+  }
+  p {
+    @apply text-base;
+  }
+  .small {
+    @apply text-sm;
+  }
+}

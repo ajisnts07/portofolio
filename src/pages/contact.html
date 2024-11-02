@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Personal Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="../../public/img/logo-primary.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../public/css/output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div
+      class="container flex items-center justify-between border-b-2 border-zinc-100 py-8"
+    >
+      <div class="flex gap-1">
+        <a href="#">
+          <h6 class="text-gray-400 hidden md:inline">LOCAL/</h6>
+        </a>
+        <h6 id="time"></h6>
+      </div>
+
+      <a href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#1e1e1e"
+            d="M5 5h13a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3m0 1c-.5 0-.94.17-1.28.47l7.78 5.03l7.78-5.03C18.94 6.17 18.5 6 18 6zm6.5 6.71L3.13 7.28C3.05 7.5 3 7.75 3 8v9a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2V8c0-.25-.05-.5-.13-.72z"
+          />
+        </svg>
+      </a>
+
+      <button
+        class="rounded-full bg-gray-950 p-2 md:py-3 md:px-4"
+        id="openBtnCanvas"
+      >
+        <h6 class="text-white hidden md:inline">NAVIGASI</h6>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          class="inline md:hidden"
+        >
+          <path
+            fill="#ffffff"
+            fill-rule="evenodd"
+            d="M20.75 7a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <div class="container md:my-32 my-16">
+      <h3>Hello!</h3>
+
+      <div class="grid md:grid-cols-3 gap-4 md:gap-8 md:my-16 my-4">
+        <!-- card -->
+        <div class="card rounded-xl bg-gray-100 p-8">
+          <p class="text-gray-950 font-bold text-xs">(1)</p>
+          <h6 class="mt-2">Email</h6>
+          <p class="mt-4">ajisnts07@gmail.com</p>
+        </div>
+        <!-- card -->
+        <div class="card rounded-xl bg-gray-100 p-8">
+          <p class="text-gray-950 font-bold text-xs">(2)</p>
+          <h6 class="mt-2">Nomor Telepon</h6>
+          <p class="mt-4">(+62) 857 2161 0995</p>
+        </div>
+        <!-- card -->
+        <a
+          href="https://github.com/ajisnts07"
+          class="card rounded-xl bg-gray-100 p-8"
+        >
+          <p class="text-gray-950 font-bold text-xs">(3)</p>
+          <h6 class="mt-2">Github</h6>
+          <p class="mt-4">ajisnts07</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- offCanvas -->
+    <div
+      id="offCanvas"
+      class="fixed right-0 top-0 h-svh w-full translate-x-full transform bg-white text-gray-950 transition-transform duration-300 ease-in-out"
+    >
+      <div class="flex min-h-svh items-center justify-center">
+        <div class="container text-center">
+          <div class="flex justify-between items-center mb-16 md:mb-32">
+            <div class="flex gap-1">
+              <a href="#">
+                <h6 class="text-gray-400 hidden md:inline">LOCAL/</h6>
+              </a>
+              <h6 id="times"></h6>
+            </div>
+
+            <button
+              id="closeBtnCanvas"
+              class="rounded-full bg-gray-950 px-5 py-3 text-white"
+            >
+              X
+            </button>
+
+            <button
+              class="rounded-full bg-gray-950 p-2 md:py-3 md:px-4"
+              id="openBtnCanvas"
+            >
+              <h6 class="text-white hidden md:inline">Hubungi Saya</h6>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                class="inline md:hidden"
+              >
+                <path
+                  fill="#ffff"
+                  d="M5 5h13a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3m0 1c-.5 0-.94.17-1.28.47l7.78 5.03l7.78-5.03C18.94 6.17 18.5 6 18 6zm6.5 6.71L3.13 7.28C3.05 7.5 3 7.75 3 8v9a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2V8c0-.25-.05-.5-.13-.72z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <a href="../../index.html#home">
+            <h2>HOME</h2>
+          </a>
+          <a href="../../index.html#project">
+            <h2>PROJECT</h2>
+          </a>
+          <a href="../../index.html#hobby">
+            <h2>KETERAMPILAN</h2>
+          </a>
+          <a href="../../index.html#study">
+            <h2>PENDIDIKAN</h2>
+          </a>
+          <a href="../../index.html#experience">
+            <h2>PENGALAMAN</h2>
+          </a>
+          <a href="../../index.html#sertification">
+            <h2>SERTIFIKASI</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../public/js/output.js"></script>
+  </body>
+</html>
